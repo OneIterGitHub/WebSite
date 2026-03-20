@@ -1,7 +1,75 @@
 .container {
-    padding: 0 7.5%;
-    color: white;
+    padding: 20px 7.5%;
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--color-text);
+    animation: fadeInUp 0.6s ease;
 }
+
+.container p {
+    margin-bottom: 0.75em;
+    color: var(--color-text-muted);
+}
+
+.container h1, .container h2, .container h3, .container h4 {
+    color: var(--color-text);
+}
+
 .container a {
-    color: #ffcc00;
+    color: var(--color-link-highlight);
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+.container ul {
+    padding-left: 1.5em;
+}
+
+.container li {
+    margin-bottom: 0.5em;
+    color: var(--color-text-muted);
+}
+
+.container li strong {
+    color: var(--color-text);
+}
+
+/* FOOTER */
+.footer {
+    padding: 20px 3%;
+    margin-top: 40px;
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    border-top: 1px solid var(--color-bg-light);
+}
+
+.footer a {
+    color: var(--color-text-muted);
+}
+
+.footer a:hover {
+    color: var(--color-text);
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .container {
+        padding: 20px 5%;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 723px) {
+    .container {
+        padding: 15px 4%;
+    }
+    .container h1 {
+        font-size: var(--font-size-xl);
+    }
+    .container h2 {
+        font-size: var(--font-size-lg);
+    }
 }
