@@ -1,27 +1,37 @@
-/* HEADER */
+/* HEADER — glass morphism */
 .header {
-    padding: 15px 3%;
+    padding: 14px 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-bg);
-    animation: fadeIn 0.6s ease;
+    background: var(--color-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--color-glass-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    animation: fadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header > .link a {
     color: var(--color-text);
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.01em;
     position: relative;
 }
 
 .header > .link a::after {
     content: '';
     position: absolute;
-    bottom: -2px;
+    bottom: -3px;
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--color-accent);
+    background: linear-gradient(90deg, var(--color-accent), transparent);
     transition: width var(--transition-normal);
+    border-radius: 1px;
 }
 
 .header > .link a:hover::after {
@@ -44,4 +54,15 @@
 
 .header nav .link {
     margin: 0;
+}
+
+.header nav .link a {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+.header nav .link a:hover {
+    color: var(--color-text);
 }
