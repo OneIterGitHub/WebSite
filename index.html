@@ -1,44 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/logoOriginal.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Circleep - track your habits and build better routines. Available on App Store."
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <title>OneIter</title>
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <a
+      class="skip-link"
+      href="#main"
+      style="
+        position: absolute;
+        left: -9999px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      "
+      >Skip to main content</a
+    >
+
     <header class="header">
-        <h2 class="link"><a href="index.html">OneIter</a></h2>
-        <p class="link"><a href="privacy_policy.html">Privacy Policy</a></p>
+      <h2 class="link"><a href="index.html">OneIter</a></h2>
+      <nav aria-label="Main navigation">
+        <p class="link">
+          <a href="privacy_policy.html">Privacy Policy</a>
+        </p>
+      </nav>
     </header>
 
+    <main id="main" class="container">
+      <div
+        class="app-preview"
+        role="img"
+        aria-label="Circleep app preview banner"
+      ></div>
+      <div class="marketplaces" role="list" aria-label="Download links">
+        <div class="marketplace app-store" role="listitem">
+          <a
+            href="https://apps.apple.com/de/app/circleep/id6477337412"
+            aria-label="Download on the App Store"
+          >
+            <img src="./images/app-store-icon.png" alt="App Store" />
+            <p>App Store</p>
+          </a>
+        </div>
+        <div class="marketplace google-play" role="listitem">
+          <a href="#" aria-label="Coming soon on Google Play">
+            <img src="./images/google-play-icon.png" alt="Google Play" />
+            <p>Google Play</p>
+          </a>
+        </div>
+      </div>
+    </main>
 
-    <div class="container">
-        <div class="app-preview">
-            <p class="contact-us">
-                Contact Us
-                <br><br>
-                <a tabindex="-1" href="mailto:samelukbogd@gmail.com">samelukbogd@gmail.com</a>
-                <a tabindex="-1" href="mailto:michael.bezruchko@gmail.com">michael.bezruchko@gmail.com</a>
-            </p>
-        </div>
-        <div class="marketplaces">
-            <div class="marketplace app-store">
-                <a href="https://apps.apple.com/de/app/circleep/id6477337412">
-                    <img src="./images/app-store-icon.png" alt="App Store">
-                    <p>App Store</p>
-                </a>
-            </div>
-            <div class="marketplace google-play">
-                <a href="#">
-                    <img src="./images/google-play-icon.png" alt="Google Play">
-                    <p>Google Play</p>
-                </a>
-            </div>
-        </div>
-    </div>
-</body>
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="mailto:hello@oneiter.com">Contact</a>
+      </div>
+      <p>&copy; 2026 OneIter. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
